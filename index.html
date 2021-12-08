@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>FE 1802</title>
+		<title>Great Search Engine</title>
         <link rel="shortcut icon" type="image/x-icon" href="gg.jpg"/>
         <meta name="viewport" content="width=device-width,user-scalable=no" />
         <style type="text/css">
@@ -35,16 +35,6 @@
                 url = common("https://www.sogou.com/web?query=");
                 window.open(url);
             }
-            function bing_cn(){
-                url = common("https://cn.bing.com/search?q=");
-                window.open(url);
-            }
-            function bing_in(){
-                var search_text = document.getElementById("srk").value; //获取id为srk的input值
-                search_text = encodeURIComponent(search_text);
-                url = "https://cn.bing.com/search?q=" + search_text + "&ensearch=1";
-                window.open(url);
-            }
             function zhihu(){
                 url = common("https://www.zhihu.com/search?type=content&q=");
                 window.open(url);
@@ -59,14 +49,6 @@
             }
             function weixin(){
                 url = common("https://weixin.sogou.com/weixin?type=2&query=");
-                window.open(url);
-            }
-            function quark(){
-                url = common("https://quark.sm.cn/s?q=");
-                window.open(url);
-            }
-            function gitee(){
-                url = common("https://search.gitee.com/?skin=rec&type=repository&q=");
                 window.open(url);
             }
             function github(){
@@ -112,7 +94,7 @@
         <div class="center-in-center-4">
             <div align="center">
                 </BR></BR></BR></BR>
-                <img src="gg.jpg" width=60%/></BR></BR>
+                <img src="gg.jpg" width=55%/></BR></BR>
                 <input id="srk" value="" style="width: 350px; height: 25px;" onkeydown="if(event.keyCode==13) {baidu()};" autofocus="autofocus">
                 <text style="color: #ffffff">「默认百度搜索」</text>
             </div>
