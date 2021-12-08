@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>FE 1802</title>
+        <link rel="shortcut icon" type="image/x-icon" href="gg.jpg"/>
+        <meta name="viewport" content="width=device-width,user-scalable=no" />
+        <style type="text/css">
+            body{
+                background-color: #1b1e2b;
+            }
+            .center-in-center-4{
+            	position: absolute;
+            	top: 40%;
+            	left: 50%;
+            	-webkit-transform: translate(-50%, -50%);
+            	-moz-transform: translate(-50%, -50%);
+            	-ms-transform: translate(-50%, -50%);
+            	-o-transform: translate(-50%, -50%);
+            	transform: translate(-50%, -50%);
+            }
+        </style>
+        <script type="text/javascript">
+            function common(api){
+                var search_text = document.getElementById("srk").value; //获取id为srk的input值
+                search_text = encodeURIComponent(search_text);
+                url = api + search_text;
+                return url;
+            }
+            function baidu(){
+                url = common("http://www.baidu.com/s?wd=");
+                window.open(url);
+            }
+            function sougou(){
+                url = common("https://www.sogou.com/web?query=");
+                window.open(url);
+            }
+            function bing_cn(){
+                url = common("https://cn.bing.com/search?q=");
+                window.open(url);
+            }
+            function bing_in(){
+                var search_text = document.getElementById("srk").value; //获取id为srk的input值
+                search_text = encodeURIComponent(search_text);
+                url = "https://cn.bing.com/search?q=" + search_text + "&ensearch=1";
+                window.open(url);
+            }
+            function zhihu(){
+                url = common("https://www.zhihu.com/search?type=content&q=");
+                window.open(url);
+            }
+            function csdn(){
+                url = common("https://so.csdn.net/so/search/all?q=");
+                window.open(url);
+            }
+            function bilibili(){
+                url = common("https://search.bilibili.com/all?keyword=");
+                window.open(url);
+            }
+            function weixin(){
+                url = common("https://weixin.sogou.com/weixin?type=2&query=");
+                window.open(url);
+            }
+            function quark(){
+                url = common("https://quark.sm.cn/s?q=");
+                window.open(url);
+            }
+            function gitee(){
+                url = common("https://search.gitee.com/?skin=rec&type=repository&q=");
+                window.open(url);
+            }
+            function github(){
+                url = common("https://github.com/search?q=");
+                window.open(url);
+            }
+            function zh2en(){
+                url = common("https://fanyi.baidu.com/?aldtype=16047#zh/en/");
+                window.open(url);
+            }
+            function en2zh(){
+                url = common("https://fanyi.baidu.com/?aldtype=16047#en/zh/");
+                window.open(url);
+            }
+            function wiki_en(){
+                url = common("https://en.jinzhao.wiki/wiki/");
+                window.open(url);
+            }
+            function wiki_zh(){
+                url = common("https://chinois.jinzhao.wiki/wiki/");
+                window.open(url);
+            }
+            function music(){
+                url = common("http://tool.liumingye.cn/music/?page=audioPage&type=migu&name=");
+                window.open(url);
+            }
+            function baiduxs(){
+                url = common("https://xueshu.baidu.com/s?wd=");
+                window.open(url);
+            }
+            function googlexs(){
+                url = common("https://xs.lsqwl.org/scholar?hl=zh-CN&q=");
+                window.open(url);
+            }
+            function cnki(){
+                url = common("https://kns.cnki.net/KNS8/DefaultResult/Index?dbcode=SCDB&kw=");
+                window.open(url);
+            }
+            
+        </script>
+	</head>
+	<body>
+        <div class="center-in-center-4">
+            <div align="center">
+                </BR></BR></BR></BR>
+                <img src="gg.jpg" width=60%/></BR></BR>
+                <input id="srk" value="" style="width: 350px; height: 25px;" onkeydown="if(event.keyCode==13) {baidu()};" autofocus="autofocus">
+                <text style="color: #ffffff">「默认百度搜索」</text>
+            </div>
+            </BR>
+            <div align="center">
+                <input type="button" value="知乎搜索" style="background-color: #575a75; color: #6495ED;" onclick="zhihu()">
+                <input type="button" value="微信搜索" style="background-color: #575a75; color: lightgreen;" onclick="weixin()">
+                <input type="button" value="维基（英）"  style="background-color: #575a75; color: white;" onclick="wiki_en()">
+                <input type="button" value="维基（中）"  style="background-color: #575a75; color: white;" onclick="wiki_zh()"></BR></BR>
+                <input type="button" value="百度搜索" style="background-color: #575a75; color: #ae81ff;" onclick="baidu()">
+                <input type="button" value="搜狗搜索" style="background-color: #575a75; color: #ff8124;" onclick="sougou()">
+                <input type="button" value="bilibili搜索" style="background-color: #575a75; color: hotpink;" onclick="bilibili()">
+                <input type="button" value="music搜索" style="background-color: #575a75; color: skyblue;" onclick="music()"></BR></BR>
+                <input type="button" value="百度学术" style="background-color: #575a75; color: #ffc20e;" onclick="baiduxs()">
+                <input type="button" value="谷歌学术" style="background-color: #575a75; color: #ffc20e;" onclick="googlexs()">
+                <input type="button" value="中国知网" style="background-color: #575a75; color: #ffc20e;" onclick="cnki()"></BR></BR>
+                <input type="button" value="Github搜索"  style="background-color: #575a75; color: lightgray;" onclick="github()">
+                <input type="button" value="CSDN搜索" style="background-color: #575a75; color: orange;" onclick="csdn()"></BR></BR>
+                <input type="button" value="百度中译英" style="background-color: #575a75; color: lightpink;" onclick="zh2en()">
+                <input type="button" value="百度英译中" style="background-color: #575a75; color: lightblue;" onclick="en2zh()">
+            </div>
+        </div>
+	</body>
+    
+</html>
