@@ -55,24 +55,12 @@
                 else if(search_text == "QQ邮箱" || search_text == "qq邮箱"  || search_text == "邮箱"){
                     window.open("https://mail.qq.com/");
                 }
-                else if(search_text == "学术镜像"){
-                    window.open("https://ac.scmor.com/");
-                }
                 else if(search_text == "gitee" || search_text == "GITEE" || search_text == "Gitee"){
                     window.open("https://gitee.com/");
                 }
                 else if(search_text == "github" || search_text == "GITHUB" || search_text == "Github"){
                     window.open("https://github.com/");
                 }
-		else if(search_text == "gg2"){
-                    window.open("https://codefoxs.github.io/hp/gg2/");
-                }
-                else if(search_text == "myweb"){
-                    window.open("https://gitee.com/code-fox/hp");
-                }
-				else if(search_text == "353222"){
-				    window.open("https://gitee.com/code-fox/econometrics/wikis/%E4%B8%BB%E9%A1%B5");
-				}
                 else if(search_text == ""){
                     alert_sentence();
                 }
@@ -90,6 +78,10 @@
                 url = common("http://www.baidu.com/s?wd=");
                 window.open(url);
             }
+			function bing(){
+			    url = common("https://cn.bing.com/search?q=");
+			    window.open(url);
+			}
             function zhihu(){
                 url = common("https://www.zhihu.com/search?type=content&q=");
                 window.open(url);
@@ -111,19 +103,15 @@
                 window.open(url);
             }
             function wiki_en(){
-                url = common("https://en.wikipedia.ahau.cf/wiki/");
+                url = common("https://en.wikipedia.org/wiki/");
                 window.open(url);
             }
             function wiki_zh(){
-                url = common("https://zh.wikipedia.ahau.cf/wiki/");
+                url = common("https://zh.wikipedia.org/wiki/");
                 window.open(url);
             }
             function music(){
                 url = common("http://tool.liumingye.cn/music/?page=audioPage&type=migu&name=");
-                window.open(url);
-            }
-            function googlexs(){
-                url = common("https://sc.panda321.com/scholar?hl=en&q=");
                 window.open(url);
             }
             function cnki(){
@@ -131,10 +119,6 @@
                 window.open(url);
             }
             function google(){
-                url = common("https://search.ahnu.cf/search?q=");
-                window.open(url);
-            }
-            function real_google(){
                 url = common("https://google.com/search?q=");
                 window.open(url);
             }
@@ -182,7 +166,8 @@
             </div>
             </BR>
             <div align="center">
-                <input type="button" value="百度搜索" style="background-color: #575a75; color: #00c8c4;" onclick="baidu()">
+                <input type="button" value="百度搜索" style="background-color: #575a75; color: #0292db;" onclick="baidu()">
+				<input type="button" value="必应搜索" style="background-color: #575a75; color: #4da6ba;" onclick="bing()">
                 <input type="button" value="谷歌搜索" style="background-color: #575a75; color: #fbbc05;" onclick="google()">
                 <input type="button" value="维基（英）"  style="background-color: #575a75; color: white;" onclick="wiki_en()">
                 <input type="button" value="维基（中）"  style="background-color: #575a75; color: white;" onclick="wiki_zh()"></BR></BR>
@@ -203,6 +188,6 @@
 				<input type="button" value="DeepL翻译" style="background-color: #575a75; color: lightgray;" onclick="deepl()">                
             </div>
         </div>
-        <p align="center" style="color: plum; position:absolute; bottom:0; right:0; font-size: 5px;" onclick="real_google()">© 2021 By Somebody idk &nbsp;</p>
+        <p align="center" style="color: plum; position:absolute; bottom:0; right:0; font-size: 5px;" onclick="google()">© 2021 By Somebody idk &nbsp;</p>
 	</body>
 </html>
