@@ -79,8 +79,7 @@
                 window.open(url);
             }
 			function bing(){
-			    url = common("https://cn.bing.com/search?q=");
-				url = url + "&FORM=BESBTB";
+			    url = common("https://global.bing.com/search?q=");
 			    window.open(url);
 			}
             function zhihu(){
@@ -112,7 +111,7 @@
                 window.open(url);
             }
             function music(){
-                url = common("http://tool.liumingye.cn/music/?page=audioPage&type=migu&name=");
+                url = common("https://tool.liumingye.cn/music/");
                 window.open(url);
             }
             function cnki(){
@@ -121,6 +120,10 @@
             }
             function google(){
                 url = common("https://google.com/search?q=");
+                window.open(url);
+            }
+            function google_fake(){
+                url = common("https://s.doveyige.top/search?q=");
                 window.open(url);
             }
             function zhihucom(){
@@ -163,13 +166,13 @@
                 </BR></BR></BR></BR>
                 <img src="https://code-fox.gitee.io/hp/gg2.jpg" width=55%/ onclick="zhihucom()"></BR></BR>
                 <input id="srk" value="" style="width: 350px; height: 25px;" onkeydown="if(event.keyCode==13) {judge()};" autofocus="autofocus">
-                <text style="color: #ffffff" >「默认必应搜索」</text>
+                <text style="color: #ffffff" >「默认必应国际搜索」</text>
             </div>
             </BR>
             <div align="center">
                 <input type="button" value="百度搜索" style="background-color: #575a75; color: #0292db;" onclick="baidu()">
-				<input type="button" value="必应搜索" style="background-color: #575a75; color: #4da6ba;" onclick="bing()">
-                <input type="button" value="谷歌搜索" style="background-color: #575a75; color: #fbbc05;" onclick="google()">
+				<input type="button" value="必应国际" style="background-color: #575a75; color: #4da6ba;" onclick="bing()">
+                <input type="button" value="谷歌镜像" style="background-color: #575a75; color: #fbbc05;" onclick="google_fake()">
                 <input type="button" value="维基（英）"  style="background-color: #575a75; color: white;" onclick="wiki_en()">
                 <input type="button" value="维基（中）"  style="background-color: #575a75; color: white;" onclick="wiki_zh()"></BR></BR>
                 <input type="button" value="中国知网" style="background-color: #575a75; color: #b4d3ec;" onclick="cnki()">
@@ -183,7 +186,7 @@
                 <input type="button" value="微信搜索" style="background-color: #575a75; color: lightgreen;" onclick="weixin()">
                 <input type="button" value="B站搜索" style="background-color: #575a75; color: #d39797;" onclick="bilibili()">
                 <input type="button" value="Github搜索"  style="background-color: #575a75; color: lightgray;" onclick="github()">
-                <input type="button" value="音乐搜索" style="background-color: #575a75; color: skyblue;" onclick="music()"></BR></BR>
+                <input type="button" value="音乐播放器" style="background-color: #575a75; color: skyblue;" onclick="music()"></BR></BR>
 				<input type="button" value="百度翻译" style="background-color: #575a75; color: #61afef;" onclick="baidufy()">
 				<input type="button" value="有道翻译" style="background-color: #575a75; color: #d39797;" onclick="youdao()">
 				<input type="button" value="DeepL翻译" style="background-color: #575a75; color: lightgray;" onclick="deepl()">                
