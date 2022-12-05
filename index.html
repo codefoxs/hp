@@ -64,8 +64,11 @@
                 else if(search_text == ""){
                     alert_sentence();
                 }
+				else if(search_text == "bing"){
+					window.open("https://global.bing.com/?setlang=en-us&setmkt=en-us");
+				}
                 else{
-                    bing();
+                    baidu();
                 }
             }
             function common(api){
@@ -79,7 +82,7 @@
                 window.open(url);
             }
 			function bing(){
-			    url = common("https://global.bing.com/search?q=");
+			    url = common("https://cn.bing.com/search?q=");
 			    window.open(url);
 			}
             function zhihu(){
@@ -166,12 +169,12 @@
                 </BR></BR></BR></BR>
                 <img src="https://code-fox.gitee.io/hp/gg2.jpg" width=55%/ onclick="zhihucom()"></BR></BR>
                 <input id="srk" value="" style="width: 350px; height: 25px;" onkeydown="if(event.keyCode==13) {judge()};" autofocus="autofocus">
-                <text style="color: #ffffff" >「默认必应国际搜索」</text>
+                <text style="color: #ffffff" >「回车默认百度」</text>
             </div>
             </BR>
             <div align="center">
                 <input type="button" value="百度搜索" style="background-color: #575a75; color: #0292db;" onclick="baidu()">
-				<input type="button" value="必应国际" style="background-color: #575a75; color: #4da6ba;" onclick="bing()">
+				<input type="button" value="必应搜素" style="background-color: #575a75; color: #4da6ba;" onclick="bing()">
                 <input type="button" value="谷歌镜像" style="background-color: #575a75; color: #fbbc05;" onclick="google_fake()">
                 <input type="button" value="维基（英）"  style="background-color: #575a75; color: white;" onclick="wiki_en()">
                 <input type="button" value="维基（中）"  style="background-color: #575a75; color: white;" onclick="wiki_zh()"></BR></BR>
