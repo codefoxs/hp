@@ -77,7 +77,7 @@
 					window.open("https://global.bing.com/?setlang=en-us&setmkt=en-us");
 				}
                 else{
-                    baidu();
+                    bing();
                 }
             }
             function common(api){
@@ -138,8 +138,8 @@
                 url = common("https://scholar.google.com/scholar?hl=en&q=");
                 window.open(url);
             }
-            function mita(){
-                url = common("https://metaso.cn/?q=");
+            function bing(){
+                url = common("https://cn.bing.com/search?q=");
                 window.open(url);
             }
             function tsg(){
@@ -191,7 +191,7 @@
             </BR>
             <div align="center">
                 <input type="button" value="谷歌搜索" style="background-color: #575a75; color: #fbbc05;" onclick="google()">
-                <input type="button" value="秘塔搜索" style="background-color: #575a75; color: #0292db;" onclick="mita()">
+                <input type="button" value="百度搜索" style="background-color: #575a75; color: #0292db;" onclick="baidu()">
 				<input type="button" value="文心一言" style="background-color: #575a75; color: #4da6ba;" onclick="wxyy()">
                 <input type="button" value="谷歌 AI"  style="background-color: #575a75; color: white;" onclick="gemini()">
                 <input type="button" value="Kimi 搜索"  style="background-color: #575a75; color: white;" onclick="kimi()">
