@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Great Search Engine</title>
+    <head>
+        <meta charset="utf-8">
+        <title>Great Search Engine</title>
         <link rel="shortcut icon" type="image/x-icon" href="./gg2.jpg"/>
         <meta name="viewport" content="width=device-width,user-scalable=no" />
         <style type="text/css">
@@ -10,14 +10,14 @@
                 background-color: #1b1e2b;
             }
             .center-in-center-4{
-            	position: absolute;
-            	top: 40%;
-            	left: 50%;
-            	-webkit-transform: translate(-50%, -50%);
-            	-moz-transform: translate(-50%, -50%);
-            	-ms-transform: translate(-50%, -50%);
-            	-o-transform: translate(-50%, -50%);
-            	transform: translate(-50%, -50%);
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
             }
         </style>
         <script type="text/javascript">
@@ -61,23 +61,23 @@
                 else if(search_text == "github" || search_text == "GITHUB" || search_text == "Github"){
                     window.open("https://github.com/");
                 }
-				else if(search_text == "FRL" || search_text == "finance research letters" || search_text == "Finance Research Letters"){
+                else if(search_text == "FRL" || search_text == "finance research letters" || search_text == "Finance Research Letters"){
                     window.open("https://www.editorialmanager.com/frl/default2.aspx");
                 }
-				else if(search_text == "PBFJ" || search_text == "pacific-basin finance journal" || search_text == "Pacific-Basin Finance Journal"){
+                else if(search_text == "PBFJ" || search_text == "pacific-basin finance journal" || search_text == "Pacific-Basin Finance Journal"){
                     window.open("https://www.editorialmanager.com/pbfj/default2.aspx");
                 }
-				else if(search_text == "EMFT" || search_text == "emerging markets finance and trade" || search_text == "Emerging Markets Finance and Trade"){
+                else if(search_text == "EMFT" || search_text == "emerging markets finance and trade" || search_text == "Emerging Markets Finance and Trade"){
                     window.open("https://mc.manuscriptcentral.com/emft");
                 }
                 else if(search_text == ""){
                     alert_sentence();
                 }
-				else if(search_text == "bing"){
-					window.open("https://global.bing.com/?setlang=en-us&setmkt=en-us");
-				}
+                else if(search_text == "bing"){
+                    window.open("https://global.bing.com/?setlang=en-us&setmkt=en-us");
+                }
                 else{
-                    bing();
+                    baidu();
                 }
             }
             function common(api){
@@ -90,10 +90,10 @@
                 url = common("http://www.baidu.com/s?wd=");
                 window.open(url);
             }
-			function wxyy(){
-			    url = "https://yiyan.baidu.com/";
-			    window.open(url);
-			}
+            function wxyy(){
+                url = "https://yiyan.baidu.com/";
+                window.open(url);
+            }
             function zhihu(){
                 url = common("https://www.zhihu.com/search?type=content&q=");
                 window.open(url);
@@ -134,7 +134,7 @@
                 url = common("https://google.com/search?q=");
                 window.open(url);
             }
-			function googlexs(){
+            function googlexs(){
                 url = common("https://scholar.google.com/scholar?hl=en&q=");
                 window.open(url);
             }
@@ -146,30 +146,30 @@
                 url = "https://librra.gdufs.edu.cn/";
                 window.open(url);
             }
-			function scihub(){
-			    url = "https://sci-hub.ru/";
-			    window.open(url);
-			}
-			function youdao(){
-			    url = "https://fanyi.youdao.com/";
-			    window.open(url);
-			}
-			function deepl(){
-			    url = "https://www.deepl.com/translator";
-			    window.open(url);
-			}
-			function sciencedirect(){
-			    url = "https://www.sciencedirect.com/";
-			    window.open(url);
-			}
-			function jstor(){
-			    url = "https://www.jstor.org/";
-			    window.open(url);
-			}
-			function wos(){
-			    url = "https://www.webofscience.com/wos/alldb/advanced-search";
-			    window.open(url);
-			}
+            function scihub(){
+                url = "https://sci-hub.ru/";
+                window.open(url);
+            }
+            function youdao(){
+                url = "https://fanyi.youdao.com/";
+                window.open(url);
+            }
+            function deepl(){
+                url = "https://www.deepl.com/translator";
+                window.open(url);
+            }
+            function sciencedirect(){
+                url = "https://www.sciencedirect.com/";
+                window.open(url);
+            }
+            function jstor(){
+                url = "https://www.jstor.org/";
+                window.open(url);
+            }
+            function wos(){
+                url = "https://www.webofscience.com/wos/alldb/advanced-search";
+                window.open(url);
+            }
             function gemini(){
                 url = "https://gemini.google.com/u/1/app?pli=1";
                 window.open(url);
@@ -180,8 +180,8 @@
             }
             
         </script>
-	</head>
-	<body>
+    </head>
+    <body>
         <div class="center-in-center-4">
             <div align="center">
                 </BR></BR></BR></BR>
@@ -191,8 +191,8 @@
             </BR>
             <div align="center">
                 <input type="button" value="谷歌搜索" style="background-color: #575a75; color: #fbbc05;" onclick="google()">
-                <input type="button" value="百度搜索" style="background-color: #575a75; color: #0292db;" onclick="baidu()">
-				<input type="button" value="文心一言" style="background-color: #575a75; color: #4da6ba;" onclick="wxyy()">
+                <input type="button" value="必应搜索" style="background-color: #575a75; color: #0292db;" onclick="bing()">
+                <input type="button" value="文心一言" style="background-color: #575a75; color: #4da6ba;" onclick="wxyy()">
                 <input type="button" value="谷歌 AI"  style="background-color: #575a75; color: white;" onclick="gemini()">
                 <input type="button" value="Kimi 搜索"  style="background-color: #575a75; color: white;" onclick="kimi()">
                 <input type="button" value="讯飞星火"  style="background-color: #575a75; color: white;" onclick="xfxh()"></BR></BR>
@@ -208,11 +208,11 @@
                 <input type="button" value="维基百科" style="background-color: #575a75; color: #d39797;" onclick="wiki_en()">
                 <input type="button" value="Github搜索"  style="background-color: #575a75; color: lightgray;" onclick="github()">
                 <input type="button" value="音乐播放器" style="background-color: #575a75; color: skyblue;" onclick="music()"></BR></BR>
-				<input type="button" value="百度翻译" style="background-color: #575a75; color: #61afef;" onclick="baidufy()">
-				<input type="button" value="有道翻译" style="background-color: #575a75; color: #d39797;" onclick="youdao()">
-				<input type="button" value="DeepL翻译" style="background-color: #575a75; color: lightgray;" onclick="deepl()">                
+                <input type="button" value="百度翻译" style="background-color: #575a75; color: #61afef;" onclick="baidufy()">
+                <input type="button" value="有道翻译" style="background-color: #575a75; color: #d39797;" onclick="youdao()">
+                <input type="button" value="DeepL翻译" style="background-color: #575a75; color: lightgray;" onclick="deepl()">                
             </div>
         </div>
         <p align="center" style="color: plum; position:absolute; bottom:0; right:0; font-size: 5px;" onclick="google()">© 2021 By Somebody idk &nbsp;</p>
-	</body>
+    </body>
 </html>
