@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Great Search Engine</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./gg.jpg"/>
+        <meta name="viewport" content="width=device-width,user-scalable=no" />
+        <style type="text/css">
+            body{
+                background-color: #1b1e2b;
+            }
+            .center-in-center-4{
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+        </style>
+        <script type="text/javascript">
+            function rand(min, max){
+                 return Math.round(Math.random()*(max-min) + min)
+            }
+            
+            list = [
+                "困了？你这个阶段，怎么睡得着的？？",
+                "明德尚行，学贯中西",
+                "多读书，多思考",
+                "请保持学习！",
+                "凤鸣岭南！"
+            ];
+            
+            function alert_sentence(){
+                var l, s, rdnum;
+                l = list.length;
+                rdnum = rand(-0.5, l - 0.501);
+                s = list[rdnum];
+                alert(s);
+            }
+            
+            function judge(){
+                var search_text = document.getElementById("srk").value; //获取id为srk的input值
+                if(search_text == "GDUFS" || search_text == "gdufs" || search_text == "广外" || search_text == "广外官网"  || search_text == "广东外语外贸大学"){
+                    window.open("https://www.gdufs.edu.cn/");
+                }
+                else if(search_text == "智慧广外"){
+                    window.open("https://cashall.gdufs.edu.cn/new/index.html");
+                }
+                else if(search_text == "图书馆"){
+                    window.open("https://librra.gdufs.edu.cn/");
+                }
+                else if(search_text == "QQ邮箱" || search_text == "qq邮箱"  || search_text == "邮箱"){
+                    window.open("https://mail.qq.com/");
+                }
+                else if(search_text == "gitee" || search_text == "GITEE" || search_text == "Gitee"){
+                    window.open("https://gitee.com/");
+                }
+                else if(search_text == "github" || search_text == "GITHUB" || search_text == "Github"){
+                    window.open("https://github.com/");
+                }
+                else if(search_text == "FRL" || search_text == "finance research letters" || search_text == "Finance Research Letters"){
+                    window.open("https://www.editorialmanager.com/frl/default2.aspx");
+                }
+                else if(search_text == "PBFJ" || search_text == "pacific-basin finance journal" || search_text == "Pacific-Basin Finance Journal"){
+                    window.open("https://www.editorialmanager.com/pbfj/default2.aspx");
+                }
+                else if(search_text == "EMFT" || search_text == "emerging markets finance and trade" || search_text == "Emerging Markets Finance and Trade"){
+                    window.open("https://mc.manuscriptcentral.com/emft");
+                }
+                else if(search_text == ""){
+                    alert_sentence();
+                }
+                else if(search_text == "bing"){
+                    window.open("https://global.bing.com/?setlang=en-us&setmkt=en-us");
+                }
+                else{
+                    google();
+                }
+            }
+            function common(api){
+                var search_text = document.getElementById("srk").value; //获取id为srk的input值
+                search_text = encodeURIComponent(search_text);
+                url = api + search_text;
+                return url;
+            }
+            function baidu(){
+                url = common("http://www.baidu.com/s?wd=");
+                window.open(url);
+            }
+            function wxyy(){
+                url = "https://yiyan.baidu.com/";
+                window.open(url);
+            }
+            function zhihu(){
+                url = common("https://www.zhihu.com/search?type=content&q=");
+                window.open(url);
+            }
+            function zhihucom(){
+                url = "https://zhihu.com";
+                window.open(url);
+            }
+            function weixin(){
+                url = common("https://weixin.sogou.com/weixin?type=2&query=");
+                window.open(url);
+            }
+            function github(){
+                url = common("https://github.com/search?q=");
+                window.open(url);
+            }
+            function baidufy(){
+                url = common("https://fanyi.baidu.com/?aldtype=16047#auto/zh");
+                window.open(url);
+            }
+            function wiki_en(){
+                url = common("https://en.wikipedia.org/wiki/");
+                window.open(url);
+            }
+            function kimi(){
+                url = "https://kimi.moonshot.cn";
+                window.open(url);
+            }
+            function music(){
+                url = common("https://tool.liumingye.cn/music/");
+                window.open(url);
+            }
+            function cnki(){
+                url = "https://kns.cnki.net/kns8/AdvSearch";
+                window.open(url);
+            }
+            function google(){
+                url = common("https://google.com/search?q=");
+                window.open(url);
+            }
+            function googlexs(){
+                url = common("https://scholar.google.com/scholar?hl=en&q=");
+                window.open(url);
+            }
+            function bing(){
+                url = common("https://cn.bing.com/search?q=");
+                window.open(url);
+            }
+            function tsg(){
+                url = "https://librra.gdufs.edu.cn/";
+                window.open(url);
+            }
+            function scihub(){
+                url = "https://sci-hub.ru/";
+                window.open(url);
+            }
+            function youdao(){
+                url = "https://fanyi.youdao.com/";
+                window.open(url);
+            }
+            function deepl(){
+                url = "https://www.deepl.com/translator";
+                window.open(url);
+            }
+            function sciencedirect(){
+                url = "https://www.sciencedirect.com/";
+                window.open(url);
+            }
+            function jstor(){
+                url = "https://www.jstor.org/";
+                window.open(url);
+            }
+            function wos(){
+                url = "https://www.webofscience.com/wos/alldb/advanced-search";
+                window.open(url);
+            }
+            function gemini(){
+                url = "https://gemini.google.com/u/1/app?pli=1";
+                window.open(url);
+            }
+            function xfxh(){
+                url = "https://xinghuo.xfyun.cn/desk";
+                window.open(url);
+            }
+            
+        </script>
+    </head>
+    <body>
+        <div class="center-in-center-4">
+            <div align="center">
+                </BR></BR></BR></BR>
+                <img src="./gg.jpg" width=55%/ onclick="zhihucom()"></BR></BR>
+                <input id="srk" value="" style="width: 350px; height: 25px;" onkeydown="if(event.keyCode==13) {judge()};" autofocus="autofocus">
+            </div>
+            </BR>
+            <div align="center">
+                <input type="button" value="百度搜索" style="background-color: #575a75; color: #fbbc05;" onclick="baidu()">
+                <input type="button" value="必应搜索" style="background-color: #575a75; color: #0292db;" onclick="bing()">
+                <input type="button" value="文心一言" style="background-color: #575a75; color: #4da6ba;" onclick="wxyy()">
+                <input type="button" value="谷歌 AI"  style="background-color: #575a75; color: white;" onclick="gemini()">
+                <input type="button" value="Kimi 搜索"  style="background-color: #575a75; color: white;" onclick="kimi()">
+                <input type="button" value="讯飞星火"  style="background-color: #575a75; color: white;" onclick="xfxh()"></BR></BR>
+                <input type="button" value="中国知网" style="background-color: #575a75; color: #b4d3ec;" onclick="cnki()">
+                <input type="button" value="谷歌学术" style="background-color: #575a75; color: #ffc20e;" onclick="googlexs()">
+                <input type="button" value="广外图书馆" style="background-color: #575a75; color: #ffffff;" onclick="tsg()">
+                <input type="button" value="SciHub镜像" style="background-color: #575a75; color: #f8c300;" onclick="scihub()"></BR></BR>
+                <input type="button" value="Elsevier文献库"  style="background-color: #575a75; color: #f58220;" onclick="sciencedirect()">
+                <input type="button" value="JSTOR文献库"  style="background-color: #575a75; color: #d39797;" onclick="jstor()">
+                <input type="button" value="Web of Science检索"  style="background-color: #575a75; color: #db6fd7;" onclick="wos()"></BR></BR>
+                <input type="button" value="知乎搜索" style="background-color: #575a75; color: #61afef;" onclick="zhihu()">
+                <input type="button" value="微信搜索" style="background-color: #575a75; color: lightgreen;" onclick="weixin()">
+                <input type="button" value="维基百科" style="background-color: #575a75; color: #d39797;" onclick="wiki_en()">
+                <input type="button" value="Github搜索"  style="background-color: #575a75; color: lightgray;" onclick="github()">
+                <input type="button" value="音乐播放器" style="background-color: #575a75; color: skyblue;" onclick="music()"></BR></BR>
+                <input type="button" value="百度翻译" style="background-color: #575a75; color: #61afef;" onclick="baidufy()">
+                <input type="button" value="有道翻译" style="background-color: #575a75; color: #d39797;" onclick="youdao()">
+                <input type="button" value="DeepL翻译" style="background-color: #575a75; color: lightgray;" onclick="deepl()">                
+            </div>
+        </div>
+        <p align="center" style="color: plum; position:absolute; bottom:0; right:0; font-size: 5px;" onclick="google()">© 2021 By Somebody idk &nbsp;</p>
+    </body>
+</html>
